@@ -27,7 +27,7 @@ block_num = 60
 #signal = np.sin(t*2*np.pi*f1) + 0.2*np.sin(t*2*np.pi*f2)
 #signal = np.reshape(signal, (block_num, block_size))
 
-signal, rate = fn.wav_block_import('timit90.wav', block_size)
+signal, rate = fn.wav_block_import('Example.wav', block_size)
 signal = signal.astype(np.float64)
 block_num = np.size(signal, axis=0)
 
