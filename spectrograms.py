@@ -9,6 +9,7 @@ from pywt import threshold
 
 import functions as fn
 
+file_name = 'Example.wav'
 block_size = 1024
 patch_size = 256
 #block_num = 60
@@ -23,7 +24,7 @@ thr_val = 100000
 #signal = np.sin(t*2*np.pi*f1) + 0.2*np.sin(t*2*np.pi*f2)
 #signal = np.reshape(signal, (block_num, block_size))
 
-signal, rate = fn.wav_block_import('Example.wav', block_size)
+signal, rate = fn.wav_block_import(file_name, block_size)
 block_num = np.size(signal, axis=0)
 
 prev_synth_patch_matrix = np.zeros((block_size,patch_size), dtype = signal.dtype)
