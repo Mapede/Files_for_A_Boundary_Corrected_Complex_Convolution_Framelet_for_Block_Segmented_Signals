@@ -7,7 +7,7 @@ from scipy.linalg import svd
 from scipy.signal import spectrogram
 from pywt import threshold
 
-import functions_article as fn
+import functions as fn
 
 block_size = 1024
 patch_size = 256
